@@ -1,0 +1,2850 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:38.100Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2003900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1001500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1001900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 998500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1001600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1001500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1001800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El administrador agrega las categoria",
+        "description": "",
+        "id": "agregar-nuevas-categorias;el-administrador-agrega-las-categoria",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 995600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" - categoria",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.CreateCategoria.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 994200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/category/create\" para agregar - categoria",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/category/create\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.CreateCategoria.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante un metodo \"POST\" para agregar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.CreateCategoria.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32999900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo las siguiente categorias para agregar",
+            "match": {
+              "location": "features.CreateCategoria.tengo_el_siguiente_producto_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name"
+                ]
+              },
+              {
+                "cells": [
+                  "CategoryTest"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 847228100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio su peticion para agregar categorias",
+            "match": {
+              "location": "features.CreateCategoria.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se insertaron las categorias",
+            "match": {
+              "location": "features.CreateCategoria.se_insertaron_las_categorias()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Agregar nuevas categorias",
+    "description": "  Como administrador del aplicativo quiero agregar nuevas categorias",
+    "id": "agregar-nuevas-categorias",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/CreateCategoria.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:39.087Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El usuario intenta registrarse como comprador",
+        "description": "",
+        "id": "agregar-nuevos-compradores;el-usuario-intenta-registrarse-como-comprador",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para agregar - comprador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.CreateComprador.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/comprador/register\" para agregar - comprador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/comprador/register\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.CreateComprador.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"POST\" para agregar - comprador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.CreateComprador.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2004200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente vendedor para agregar - comprador",
+            "match": {
+              "location": "features.CreateComprador.tengo_el_siguiente_producto_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Address",
+                  "Date",
+                  "DNI",
+                  "Email",
+                  "N_mobile",
+                  "Name",
+                  "Password",
+                  "Username",
+                  "Lastname"
+                ]
+              },
+              {
+                "cells": [
+                  "Esquina12",
+                  "12/11/2020",
+                  "24177732",
+                  "fd23sshrg@gmail.com",
+                  "987154321",
+                  "Arturo",
+                  "FNfsDDJKMCn",
+                  "powee3",
+                  "Medina"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 913674200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio su peticion para agregar - comprador",
+            "match": {
+              "location": "features.CreateComprador.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 957600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se registro comprador",
+            "match": {
+              "location": "features.CreateComprador.se_inserto_el_vendedor()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Agregar nuevos compradores",
+    "description": "  Como usuario del aplicativo quiero registrarme como comprador",
+    "id": "agregar-nuevos-compradores",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/CreateComprador.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:40.018Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El vendedor agrega los productos",
+        "description": "",
+        "id": "agregar-nuevos-productos;el-vendedor-agrega-los-productos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para agregar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.CreateProducts.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/vendedor/producto/registrar/1\" para agregar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/vendedor/producto/registrar/1\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.CreateProducts.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 899500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"POST\" para agregar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.CreateProducts.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2999900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente producto para agregar",
+            "match": {
+              "location": "features.CreateProducts.tengo_el_siguiente_producto_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Description",
+                  "Tags",
+                  "Stock",
+                  "Price"
+                ]
+              },
+              {
+                "cells": [
+                  "Prueba",
+                  "Pruebita",
+                  "Manualidades",
+                  "19",
+                  "12.3"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 607342700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio su peticion para agregar",
+            "match": {
+              "location": "features.CreateProducts.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se insertaron los productos",
+            "match": {
+              "location": "features.CreateProducts.se_insertaron_los_productos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Agregar nuevos productos",
+    "description": "  Como vendedor del aplicativo quiero agregar nuevos productos",
+    "id": "agregar-nuevos-productos",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/CreateProducts.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:40.642Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El usuario intenta registrarse como vendedor",
+        "description": "",
+        "id": "agregar-nuevos-vendedores;el-usuario-intenta-registrarse-como-vendedor",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para agregar - vendedor",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.CreateVendedor.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/vendedor/registrar\" para agregar - vendedor",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/vendedor/registrar\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.CreateVendedor.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"POST\" para agregar - vendedor",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.CreateVendedor.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1030100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente vendedor para agregar - vendedor",
+            "match": {
+              "location": "features.CreateVendedor.tengo_el_siguiente_producto_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Address",
+                  "Date",
+                  "DNI",
+                  "Email",
+                  "N_mobile",
+                  "Name",
+                  "Password",
+                  "Username",
+                  "Lastname"
+                ]
+              },
+              {
+                "cells": [
+                  "Esquina12",
+                  "12/11/2020",
+                  "4227777",
+                  "24f423342fashg@gmail.com",
+                  "987154321",
+                  "Arturo",
+                  "FNJSDDJKMCn",
+                  "Ulhfsfsduffr13",
+                  "Medina"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1042137700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio su peticion para agregar - vendedor",
+            "match": {
+              "location": "features.CreateVendedor.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se registro vendedor",
+            "match": {
+              "location": "features.CreateVendedor.se_inserto_el_vendedor()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Agregar nuevos vendedores",
+    "description": "  Como usuario del aplicativo quiero registrarme como vendedor",
+    "id": "agregar-nuevos-vendedores",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/CreateVendedor.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:41.711Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El usuario lista los productos",
+        "description": "",
+        "id": "listar-productos-registrados;el-usuario-lista-los-productos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ListProducts.que_ingreso_al_API(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/producto/listar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/producto/listar\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.ListProducts.se_ubico_en_la_ruta(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ListProducts.mediante_el_metodo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3429153900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "envio su peticion",
+            "match": {
+              "location": "features.ListProducts.envio_su_peticion()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16108100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "obtuvo la lista de productos",
+            "match": {
+              "location": "features.ListProducts.obtuvo_la_lista_de_productos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Listar productos registrados",
+    "description": "  Como usuario del aplicativo quiero ver el listado de productos",
+    "id": "listar-productos-registrados",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/ListProducts.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:45.169Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El administrador lista los categorias",
+        "description": "",
+        "id": "listar-categorias-registradas;el-administrador-lista-los-categorias",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que se ingreso al API \"http://localhost:8080\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 22
+                }
+              ],
+              "location": "features.ListCategoria.que_ingreso_al_API_categoria(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "y se ubico en la ruta \"/category/get\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/category/get\"",
+                  "offset": 22
+                }
+              ],
+              "location": "features.ListCategoria.se_ubico_en_la_ruta_categoria(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante un metodo \"GET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ListCategoria.mediante_el_metodo_categoria(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 708460600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "envio su peticion para listar las categorias",
+            "match": {
+              "location": "features.ListCategoria.envio_su_peticion_categoria()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "obtuvo la lista de categoria",
+            "match": {
+              "location": "features.ListCategoria.obtuvo_la_lista_de_categorias()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Listar categorias registradas",
+    "description": "  Como usuario del aplicativo quiero ver el listado de categorias",
+    "id": "listar-categorias-registradas",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/ListarCategoria.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:45.888Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El usuario lista las facturas",
+        "description": "",
+        "id": "obtener-las-ventas-realizadas-por-el-vendedor;el-usuario-lista-las-facturas",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" - vendedor_factura",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ObtenerFactura.que_ingreso_al_API(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/vendedor/factura/obtener/1\" - vendedor_factura",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/vendedor/factura/obtener/1\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.ObtenerFactura.se_ubico_en_la_ruta(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 955400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"GET\" - vendedor_factura",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ObtenerFactura.mediante_el_metodo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 477913600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "envio su peticion - vendedor_factura",
+            "match": {
+              "location": "features.ObtenerFactura.envio_su_peticion()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1998800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "obtuvo la lista de facturas - vendedor_factura",
+            "match": {
+              "location": "features.ObtenerFactura.obtuvo_la_lista_de_factura()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Obtener las ventas realizadas por el vendedor",
+    "description": "  Como vendedor del aplicativo quiero ver lista de ventas realizadas",
+    "id": "obtener-las-ventas-realizadas-por-el-vendedor",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/ObtenerFactura.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:46.378Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El usuario lista los productos",
+        "description": "",
+        "id": "listar-productos-registrados;el-usuario-lista-los-productos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para obtener",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ObtenerProducto.que_ingreso_al_API(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/producto/obtener/3\" para obtener",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/producto/obtener/3\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.ObtenerProducto.se_ubico_en_la_ruta(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"GET\" para obtener",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ObtenerProducto.mediante_el_metodo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 828439300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "envio su peticion para obtener por ID",
+            "match": {
+              "location": "features.ObtenerProducto.envio_su_peticion()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1999500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "obtuvo el producto",
+            "match": {
+              "location": "features.ObtenerProducto.obtuvo_el_Producto()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Listar productos registrados",
+    "description": "  Como usuario del aplicativo quiero ver el listado de productos",
+    "id": "listar-productos-registrados",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/ObtenerProductoPorID.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:47.217Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El vendedor actualiza los productos",
+        "description": "",
+        "id": "actualizar-determinado-producto;el-vendedor-actualiza-los-productos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1008900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para actualizar productos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ActualizarProducto.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubica en la ruta \"/producto/actualizar/18\" para actualizar productos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/producto/actualizar/18\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.ActualizarProducto.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"PUT\" para actualizar productos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ActualizarProducto.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1034300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente producto para actualizarlo",
+            "match": {
+              "location": "features.ActualizarProducto.tengo_el_siguiente_producto_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Description",
+                  "Tags",
+                  "Stock",
+                  "Price"
+                ]
+              },
+              {
+                "cells": [
+                  "Vaso",
+                  "Vaso de barro",
+                  "Manualidades",
+                  "9",
+                  "13.3"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1189346000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "envio su peticion para actualizar producto",
+            "match": {
+              "location": "features.ActualizarProducto.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "se actualiza el producto",
+            "match": {
+              "location": "features.ActualizarProducto.se_insertaron_las_categorias()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Actualizar determinado producto",
+    "description": "  Como vendedor del aplicativo quiero actualizar mis productos",
+    "id": "actualizar-determinado-producto",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/actualizarProducto.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:48.416Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El vendedor actualiza el stock",
+        "description": "",
+        "id": "actualizar-stock-de-determinado-producto;el-vendedor-actualiza-el-stock",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para actualizar mi stock",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ActualizarStock.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1003900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubica en la ruta \"/producto/actualizarStock/31\" para actualizar stock",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/producto/actualizarStock/31\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.ActualizarStock.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"PUT\" para actualizar stock",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.ActualizarStock.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente producto para actualizar mi stock",
+            "match": {
+              "location": "features.ActualizarStock.tengo_el_siguiente_producto_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Stock"
+                ]
+              },
+              {
+                "cells": [
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1188637200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio su peticion para actualizar stock de producto",
+            "match": {
+              "location": "features.ActualizarStock.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se actualiza el stock del prodducto",
+            "match": {
+              "location": "features.ActualizarStock.se_actualiza_stock()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Actualizar stock de determinado producto",
+    "description": "  Como vendedor del aplicativo quiero actualizar mi stock",
+    "id": "actualizar-stock-de-determinado-producto",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/actualizarStock.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:49.622Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El vendedor elimina los productos",
+        "description": "",
+        "id": "eliminar-productos;el-vendedor-elimina-los-productos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para eliminar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.EliminarProductos.que_ingreso_al_API_eliminarproducto(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/producto/eliminar/36\" para eliminar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/producto/eliminar/36\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.EliminarProductos.se_ubico_en_la_ruta_producto(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"DELETE\" para eliminar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.EliminarProductos.mediante_el_metodo_delete(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1544969700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "envio su peticion para eliminar",
+            "match": {
+              "location": "features.EliminarProductos.envio_su_peticion_eliminar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "se eliminaron los productos",
+            "match": {
+              "location": "features.EliminarProductos.eliminoProducto()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Eliminar productos",
+    "description": "  Como vendedor del aplicativo quiero eliminar mis productos",
+    "id": "eliminar-productos",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/eliminarProducto.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:51.178Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El comprador lista los productos de acuerdo a su nombre",
+        "description": "",
+        "id": "filtrar-productos-registrados-de-acuerdo-a-su-nombre;el-comprador-lista-los-productos-de-acuerdo-a-su-nombre",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" - FN",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.FiltrarPorNombre.que_ingreso_al_API(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/producto/buscar/ga\" - FN",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/producto/buscar/ga\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.FiltrarPorNombre.se_ubico_en_la_ruta(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"GET\" - FN",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.FiltrarPorNombre.mediante_el_metodo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1190280000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "envio su peticion - FN",
+            "match": {
+              "location": "features.FiltrarPorNombre.envio_su_peticion()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2997900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "obtuvo la lista de productos de acuerdo a su filtro - FN",
+            "match": {
+              "location": "features.FiltrarPorNombre.obtuvo_la_lista_de_productos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Filtrar productos registrados de acuerdo a su nombre",
+    "description": "  Como comprador del aplicativo quiero filtrar productos por nombre",
+    "id": "filtrar-productos-registrados-de-acuerdo-a-su-nombre",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/filtrarPorNombre.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T06:53:52.387Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarProducto.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ActualizarStock.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateComprador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.CreateVendedor.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.EliminarProductos.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorNombre.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.FiltrarPorPrecio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListCategoria.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ListProducts.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerFactura.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "features.ObtenerProducto.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El comprador lista los productos de acuerdo a su precio",
+        "description": "",
+        "id": "filtrar-productos-registrados-de-acuerdo-al-precio;el-comprador-lista-los-productos-de-acuerdo-a-su-precio",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" - FP",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.FiltrarPorPrecio.que_ingreso_al_API(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/producto/buscar/20/60\" - FP",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/producto/buscar/20/60\"",
+                  "offset": 20
+                }
+              ],
+              "location": "features.FiltrarPorPrecio.se_ubico_en_la_ruta(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"GET\" - FP",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 19
+                }
+              ],
+              "location": "features.FiltrarPorPrecio.mediante_el_metodo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 481906800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "envio su peticion - FP",
+            "match": {
+              "location": "features.FiltrarPorPrecio.envio_su_peticion()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "obtuvo la lista de productos de acuerdo a su filtro - FP",
+            "match": {
+              "location": "features.FiltrarPorPrecio.obtuvo_la_lista_de_productos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Filtrar productos registrados de acuerdo al precio",
+    "description": "  Como comprador del aplicativo quiero filtrar productos por precio",
+    "id": "filtrar-productos-registrados-de-acuerdo-al-precio",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/filtrarPorPrecio.feature",
+    "tags": []
+  }
+]
